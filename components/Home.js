@@ -53,7 +53,7 @@ function Home() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        const formatedData = data.map((movie) => {
+        const formatedData = data.movies.map((movie) => {
           //console.log("movie",movie);
           const poster = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
           let overview = movie.overview;
